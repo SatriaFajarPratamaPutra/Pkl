@@ -5,6 +5,9 @@ use App\Http\Controllers\DivisiController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\SubDivisiController;
 use App\Http\Controllers\AnggotaController;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ProfilController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -32,3 +35,14 @@ Route::delete('/anggota/{id}', [AnggotaController::class, 'destroy'])->name('ang
 
 // Tambah route untuk ubah status
 Route::patch('/anggota/{id}/toggle-status', [AnggotaController::class, 'toggleStatus'])->name('anggota.toggleStatus');
+
+Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [AuthController::class, 'login']);
+
+Route::get('/register', [AuthController::class, 'showRegisterForm'])->name('register');
+Route::post('/register', [AuthController::class, 'register']);
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profil', [ProfilController::class, 'edit'])->name('profil.edit');
+    Route::patch('/profil/update-password', [ProfilController::class, 'updatePassword'])->name('profil.updatePassword');
+});

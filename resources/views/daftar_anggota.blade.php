@@ -36,10 +36,10 @@
 
         <div class="col-md-3">
             <select name="status" class="form-select">
-                <option value="">Semua Status</option>
-                <option value="aktif" {{ request('status') == 'aktif' ? 'selected' : '' }}>Aktif</option>
-                <option value="nonaktif" {{ request('status') == 'nonaktif' ? 'selected' : '' }}>Non Aktif</option>
-            </select>
+    <option value="">Semua Status</option>
+    <option value="Aktif" {{ request('status') == 'Aktif' ? 'selected' : '' }}>Aktif</option>
+    <option value="Non Aktif" {{ request('status') == 'Non Aktif' ? 'selected' : '' }}>Non Aktif</option>
+</select>
         </div>
         <div class="col-md-3 d-flex gap-2">
             <button type="submit" class="btn btn-primary flex-grow-1">Cari</button>
@@ -96,8 +96,9 @@
             @endforelse
         </tbody>
     </table>
-
-    <!-- Pagination -->
-    
+    <!-- Navigasi Pagination -->
+<div class="d-flex justify-content-center">
+    {{ $anggotaList->withQueryString()->links('simple') }}
+</div>
 </div>
 @endsection

@@ -34,7 +34,7 @@
       text-align: center;
       margin-bottom: 20px;
       width: 200px;
-      height: 200px;
+      height: 250px;
       margin-left: 40px;
       font-family: 'Nunito',
     }
@@ -81,6 +81,7 @@
         <a class="nav-link" href="{{ url('/beranda') }}"><img src="{{ asset('images/beranda.png') }}" alt="Profil Icon" style="width: 13px; height: 13px; margin-right: 7px; margin-bottom:5px;">Beranda</a>
         <a class="nav-link" href="{{ url('/anggota') }}"><img src="{{ asset('images/user.png') }}" alt="Profil Icon" style="width: 13px; height: 13px; margin-right: 7px; margin-bottom:5px;">Anggota</a>
         <a class="nav-link" href="{{ url('/divisi') }}"><img src="{{ asset('images/grup.png') }}" alt="Profil Icon" style="width: 13px; height: 13px; margin-right: 7px; margin-bottom:5px;">Sub Divisi</a>
+        <a class="nav-link" href="{{ url('/profil') }}"><img src="{{ asset('images/Vector.png') }}" alt="Profil Icon" style="width: 13px; height: 13px; margin-right: 7px; margin-bottom:5px;">Ubah Sandi</a>
         <a class="nav-link" href="{{ url('/') }}"><img src="{{ asset('images/keluar.png') }}" alt="Profil Icon" style="width: 13px; height: 13px; margin-right: 7px; margin-bottom:5px;">Keluar</a>
       </nav>
     </div>

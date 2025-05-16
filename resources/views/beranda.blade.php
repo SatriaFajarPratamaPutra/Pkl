@@ -8,9 +8,6 @@
     <h2 class="mb-0">Admin</h2>
     <p class="text-muted">Divisi I Wilayah Sumatera</p>
   </div>
-  <div>
-    <strong>Athallah Anargya Mahardika</strong>
-  </div>
 </div>
 
 <div class="row text-center mb-4">
@@ -44,9 +41,7 @@
 
 <div class="p-4 rounded mb-3" style="background-color:#EDF4EA">
   <p>
-    Lorem ipsum dolor sit amet consectetur. Velit adipiscing a bibendum nunc tortor senectus suspendisse rhoncus.
-    Duis vel hendrerit elit duis nunc magna id et. Pharetra vitae duis ultricies ultricies in. Diam sagittis eget
-    dignissim in. Id hendrerit id nunc morbi purus lorem quisque suspendisse habitant...
+   ppp
   </p>
 </div>
 
